@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HyperDev Sass Demo</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="start">
+      <h1>MATHS GAME</h1>
+      <p>[ Are you smarter than a 5th grader? ]</p>
+      <button type="button" class="button-start">START</button>
+    </div>
+
+    <div class="play">
+      <div id="progressbar">
+        <span class="loading"></span>
+      </div>
+      <div id="problem"></div>
+      <p> Hit answer on keyboard </br> [ #0-9 ] </p>
+      <div class="verdict">
+          <img src="https://s24.postimg.org/9w1usfz05/green_light.png" class="right" width="50px">
+          <img src="https://s24.postimg.org/flmoqhuk5/red_light.png" class="wrong" width="50px">
+      </div>
+    </div>
+
+    <div class="end">
+      <h1> You Got </h1>
+      <h1><div id="finalScore">0</div></h1>
+      <h1> Correct! </h1>
+      <button type="button" class="button-end">TRY AGAIN</button>
+    </div>
+
+    <!--move these guys to a scripts.html partial -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
