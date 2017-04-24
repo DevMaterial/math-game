@@ -5,7 +5,7 @@
 var express = require('express');
 var app = express();
 
-// we've started you off with Express, 
+// we've started you off with Express,
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
 sassMiddleware = require("node-sass-middleware");
 
@@ -26,6 +26,6 @@ app.get("/", function (request, response) {
 });
 
 // listen for requests :)
-listener = app.listen(process.env.PORT, function () {
+listener = app.listen(4000, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
