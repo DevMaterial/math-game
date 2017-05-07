@@ -1,5 +1,5 @@
 # A MATH GAME
-<strong>Languages: HTML/CSS+SASS/JS+jQuery+Node
+<strong>Languages: HTML/CSS+SASS/JS+jQuery+Node</strong>
 
 This program generates 10 random math questions which a user needs to solve each in under 5 seconds.
 
