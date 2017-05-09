@@ -1,0 +1,122 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400';
+/* Color Variables */
+body {
+  background-color: #e3e3e3; }
+
+h1, h3, #problem, #timer, p, button {
+  font-family: 'Roboto Condensed';
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 5px 0; }
+
+button {
+  position: relative;
+  background-color: #f4f4f4;
+  border: 2px solid #111111;
+  left: 37%;
+  width: 100px;
+  margin-top: 20px;
+  transition: all 0.2s; }
+  button:hover {
+    color: #f4f4f4;
+    background-color: #111111;
+    transition: all 0.2s; }
+
+h1 {
+  font-size: 50px;
+  padding-top: 30px; }
+
+h3 {
+  margin-left: 320px;
+  margin-bottom: -10px;
+  font-size: 30px; }
+
+#problem {
+  font-size: 60px;
+  margin-top: 50px; }
+
+#timer {
+  text-align: right;
+  padding-right: 30px; }
+
+p {
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic; }
+
+.play p {
+  position: relative;
+  border-top: 1px solid #111111;
+  border-bottom: 1px solid #111111;
+  margin-top: 60px;
+  left: 16%;
+  padding: 20px 0;
+  width: 250px; }
+
+.verdict {
+  position: relative;
+  left: 20%;
+  margin-top: 50px; }
+  .verdict .right, .verdict .wrong {
+    margin: 0 30px;
+    opacity: 0.1;
+    transition: all 200ms; }
+
+.start {
+  width: 400px;
+  height: 300px;
+  border: 10px solid #111111;
+  background-color: #f4f4f4; }
+
+.play {
+  width: 400px;
+  height: 470px;
+  border: 10px solid #111111;
+  background-color: #f4f4f4; }
+
+.end {
+  width: 400px;
+  height: 270px;
+  border: 10px solid #111111;
+  padding-top: 50px;
+  background-color: #f4f4f4; }
+  .end h1, .end h2 {
+    margin: 0;
+    padding: 0; }
+  .end .button-end {
+    margin-top: 26px; }
+
+.start, .play, .end {
+  position: absolute; }
+
+.play, .end {
+  display: none; }
+
+#progressbar {
+  height: 26px;
+  width: 200px;
+  background: #E0E0E0;
+  border-left: #212121 3px solid;
+  border-right: #212121 3px solid;
+  text-align: center;
+  padding: 2px 0 2px 0;
+  margin-left: 24%;
+  margin-top: 30px; }
+
+.loading {
+  transition: all 500ms;
+  height: 20px;
+  width: 100%;
+  background: #FFEE58;
+  margin: 3px 0 3px 0;
+  display: inline-block;
+  animation: load 10s linear infinite; }
+
+@keyframes load {
+  0% {
+    width: 1%; } }
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px; } }

@@ -181,7 +181,7 @@ function unprocessing(){
 // When the user presses a key..
 
 $(document).on("keypress", function(e) {
-  
+
   if (e.which === 48 && 0 === probAnswer) {
     processing();
   } else if (e.which === 49 && 1 === probAnswer) {
@@ -205,12 +205,12 @@ $(document).on("keypress", function(e) {
   } else {
     unprocessing();
   }
-  
+
   //Updates score
   document.getElementById('finalScore').innerHTML = score;
 });
 
-//Adds the random 
+//Adds the random
 
 
 var displayProblem = problem.innerHTML += randomProblem;
